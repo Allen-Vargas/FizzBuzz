@@ -1,25 +1,33 @@
-
 public class Program {
-	public static void main(String args[]) {
-
+	
+	public static void main(String[] args) {
+		FizzBuzz fb = new FizzBuzz();
+		fb.generarMuchos();
+	}
+}
+	
+class FizzBuzz {
+	
+	void generarMuchos() {
 		for(int i = 0; i < 100; i++)
-		{
-			if (i % 3 == 0 && i % 5 == 0)
 			{
-				System.out.println("FizzBuzz");                    
-			}
-			else 
-				if(i % 3 == 0)
+				if (i % 3 == 0 && i % 5 == 0)
 				{
-					System.out.println("Fizz");
+					System.out.println("FizzBuzz");                    
 				}
 				else 
-					if(i % 5 == 0)
+					if(i % 3 == 0)
 					{
-						System.out.println("Buzz");
+						System.out.println("Fizz");
 					}
-					else
-						System.out.println(i);
-        }
+					else 
+						if(i % 5 == 0)
+						{
+							System.out.println("Buzz");
+						}
+						else
+							System.out.println(i);
+		    }
 	}
+	
 }
