@@ -5,8 +5,9 @@ import org.junit.jupiter.api.Test;
 class FizzBuzzTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testPrueba() {
+		String resultado = "1";
+		String esperado = "1";
+		assertEquals(esperado, resultado);
 	}
-
 }
