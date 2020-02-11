@@ -15,19 +15,29 @@ class FizzBuzz {
 				{
 					System.out.println("FizzBuzz");                    
 				}
-				else 
+				else
+				{
 					if(i % 3 == 0)
 					{
 						System.out.println("Fizz");
 					}
-					else 
+					else
+					{
 						if(i % 5 == 0)
 						{
 							System.out.println("Buzz");
 						}
 						else
+						{
 							System.out.println(i);
+						}				
+					}	
+				}		
 		    }
 	}
 	
+	String generarPara(int numero) {
+		String cadena = String.valueOf(numero); 
+		return cadena;
+	}
 }
